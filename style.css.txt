@@ -1,55 +1,120 @@
-body {
-    margin: 0;
-    font-family: Georgia, serif;
-    background-color: #f4f1ec;
-    color: #2b2b2b;
+* {
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #3a3a3a;
-    color: white;
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #1f1f1f;
+    background-color: #f4f4f2;
+}
+
+/* HEADER */
+.site-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 0.05em;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* MAP */
+.map-section {
+    text-align: center;
+    background-color: #ffffff;
     padding: 20px;
+}
+
+.map-section img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-weight: 600;
+}
+
+.sidebar a:hover {
+    color: #0057b7;
+}
+
+/* CONTENT */
+.content {
+    padding-left: 40px;
+    max-width: 700px;
+}
+
+.content h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.focus {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* FOOTER */
+.site-footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    border-top: 1px solid #ddd;
     text-align: center;
 }
 
-.subtitle {
-    font-style: italic;
-    opacity: 0.9;
-}
-
-nav {
-    margin-top: 15px;
-}
-
-nav a {
-    color: white;
-    margin: 0 8px;
+.site-footer nav a {
+    margin: 0 10px;
     text-decoration: none;
-    font-size: 14px;
+    color: #444;
+    font-size: 0.9rem;
 }
 
-nav a:hover {
+.site-footer nav a:hover {
     text-decoration: underline;
 }
 
-main {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-section {
-    margin-bottom: 60px;
-}
-
-h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 8px;
-}
-
-footer {
-    background-color: #e0ddd7;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
+copyright {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #777;
 }
